@@ -1,0 +1,9 @@
+Files to be updated
+/home/sisdata/application/admin/application/controllers/parser.php
+/home/sisdata/application/admin/application/modules/parsers/controllers/parsers.php
+/home/sisdata/application/admin/application/modules/parsers/models/parsers_model.php
+Create a folder Named "tweets" at /home/sisdata/
+We have to create text files during tweet process so there should be Permissions to add files.So all files should be runing under same user i.e "sisdata" and have rights to create files.
+Add following cron job under sisdata
+*/5 * * * * /usr/bin/php /home/sisdata/application/admin/index.php parser/tweet
+
